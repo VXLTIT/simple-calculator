@@ -8,6 +8,7 @@
         
         html {
             font-size: 10px ;
+            overflow-x: hidden;
         }
         
         h1 {
@@ -40,7 +41,9 @@
             margin: 0 auto 0 auto;
             height: 10rem;
         }
-        
+
+            /* input tags */
+
         section {
             display: flex;
             justify-content: center;
@@ -55,6 +58,8 @@
             height: 2rem;
         }
         
+        /* result text */
+
         article h1 {
             text-align: center;
             display:none;
@@ -64,7 +69,13 @@
             width: 100%;
             height: 3rem;
         }
-        
+
+        .clear-and-show {
+            display: flex;
+            justify-content: center;
+            width: 42%;
+            margin:1rem auto 0 auto;
+        }
         
                 /* for footer */
         

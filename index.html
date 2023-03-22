@@ -16,22 +16,31 @@
             <h1>Simple calculator</h1>
         </header>
         <article>
+
             <section class="calculator">
-                <input type="text">
-                <select name="sign" id="">
+                <input type="text" class="number-1">
+                <select name="sign" id="sign">
                     <option value="choose">Выберите знак</option>
                     <option value="summarized">+</option>
                     <option value="difference">-</option>
                     <option value="multiplication">&#xD7</option>
                     <option value="division">&#xF7</option>
                 </select>
-                <input type="text">
+                <input type="text" class="number-2">
             </section>
-            <button>Очистить поля</button>
-            <h1>Результат:</h1>
-            <h1>564</h1>
+
+            <div class="clear-and-show">
+                <button>Очистить поля</button>
+                <button class="show-result">Посчитать</button>
+            </div>
+
+            <h1 class="result-text">Результат:</h1>
+            <h1 class="result-number">564</h1>
+
         </article>
 
         <footer><a href="https://github.com/VXLTIT" class="github">My Github</a></footer>
+
+        <script src="js-simple-calculator.js"></script>
     </body>
 </html>
