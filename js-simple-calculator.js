@@ -1,6 +1,6 @@
 
 
-let sign, resultText, resultNumber, number1, number2, resultButton, count;
+let sign, resultText, resultNumber, number1, number2, resultButton, count, clearButton;
 
 resultText = document.querySelector('.result-text');
 resultNumber = document.querySelector('.result-number');
@@ -8,10 +8,15 @@ number1 = document.querySelector('.number-1');
 number2 = document.querySelector('.number-2');
 sign = document.querySelector('#sign');
 resultButton = document.querySelector('.show-result');
-articleBack = document.querySelector('article')
+articleBack = document.querySelector('article');
+clearButton = document.querySelector('.clear');
 count = 0;
 
 resultButton.addEventListener('click', calculate);
+clearButton.addEventListener('click', clearFields);
+
+
+
 
 function calculate () {
 
@@ -61,4 +66,10 @@ function showResultToUser() {
     resultText.style.display = 'block';
     resultNumber.style.display = 'block';
     articleBack.style.height = '21rem';
+}
+
+function clearFields() {
+    number1.value = '';
+    number2.value = '';
+    sign.value = 'choose'
 }
